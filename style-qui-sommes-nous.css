@@ -1,0 +1,339 @@
+.left-content-mission {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* s'ajuste selon le contenu */
+    gap: 1em;
+    margin: 3vw;
+    margin-top: 1em;
+}
+
+/* Texte en haut à gauche */
+.text-left-mission {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    color: white;
+    font-size: 1.3em !important;
+    text-align: left;
+    padding: 1.5em;
+    border-top: 3px solid #ffcc32;
+    border-left: 3px solid #ffcc32;
+}
+  
+  
+
+
+/* Image en bas à gauche */
+.image-bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.image-bottom-left img {
+    width: 100%;
+    height: 17em;
+    display: block;
+    border-radius: 6px;
+}
+
+.image-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+.image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.text-above {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: white;
+    padding-top : 1.5em;
+    padding-bottom: 1.5em;
+
+}
+
+.mosaique-biomim-background{
+    background-color: #61615b;  
+    margin: 3vw;
+    margin-top: 1.2em;
+    margin-bottom: 50px;
+    border: 1px solid #ffcc32;
+}
+
+
+.mosaique-biomim {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto; /* s'ajuste selon le contenu */
+    gap: 1em;
+    margin: 1.8em;
+    margin-top: 0px;
+    align-items: center;
+}
+
+.mosaique-biomim img{
+    width: 100%;
+    height: 50vh;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+
+}
+
+.text-one{
+    text-align: right;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+.text-two{
+    text-align: left;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+
+
+@media screen and (orientation: portrait) {
+    
+    
+    .text-above{
+        font-size: 1.6em;
+    }
+
+    .mosaique-biomim-background{
+        margin-top: 50px;
+    }
+    .mosaique-biomim {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 1em;
+        margin: 1.8em;
+        align-items: center;
+    }
+    
+    /* Organiser l'ordre visuel */
+    .image-one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .image-two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .text-one {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        text-align: center;
+        font-size: 1.2em;
+        color: white;
+        padding: 1em;
+    }
+    
+    .image-four {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .image-five {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .text-two {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+        text-align: center;
+        font-size: 1.2em;
+        color: white;
+        padding: 1em;
+    }
+    
+    .mosaique-biomim img {
+        width: 100%;
+        height: 30vw;
+        display: block;
+        border-radius: 6px;
+    }
+    
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.nos-valeurs::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%; /* La moitié de la largeur */
+    height: 30%; /* La moitié de la hauteur */
+    border-top: 4px solid #ffcc32; /* Bordure jaune en haut */
+    border-left: 4px solid #ffcc32; /* Bordure jaune à gauche */
+  }
+  
+
+.nos-valeurs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;   /* ← toutes les lignes prennent la même hauteur */
+    gap: 0em;
+    align-items: stretch;
+    padding-top: 2em;
+    position: relative;
+    margin: 3vw;
+    margin-top: 1em;
+
+}
+
+
+
+.colonne-1, .colonne-2, .colonne-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+
+}
+
+
+.Nom-valeur {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.Description-valeur {
+    flex-grow: 1;
+    margin-bottom: 10px;
+    background-color: #61615b;
+    color: white; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #ffcc32;
+    font-size: 1.3em;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (orientation: portrait) {
+
+  .nos-valeurs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+    margin-left: 7vw;
+    margin-right: 7vw;
+
+  }
+
+  .colonne-1, .colonne-2, .colonne-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: stretch;
+  }
+
+  /* Les descriptions doivent avoir la même hauteur */
+  .Description-valeur {
+    background-color: #61615b;
+    color: white;
+    padding: 3em;
+    text-align: center;
+    border: 1px solid #ffcc32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Permet aux descriptions d'occuper un espace égal */
+    min-height: 0; /* Empêche l'élément d'être étiré */
+  }
+
+  /* Centrer les éléments à l'intérieur */
+  .colonne-1 p,
+  .colonne-2 p,
+  .colonne-3 p {
+    text-align: center;
+    padding: 3em;
+    max-width: 20vw; /* Limiter la largeur */
+    margin: 0 auto; /* Centrer le texte horizontalement */
+    display: block;
+  }
+
+  /* Organiser l'ordre des éléments (Nom à gauche et Description à droite) */
+  .colonne-1 .Description-valeur,
+  .colonne-3 .Description-valeur {
+    order: 2; /* Description à gauche */
+  }
+
+  .colonne-1 .Nom-valeur,
+  .colonne-3 .Nom-valeur {
+    order: 1; /* Nom à droite */
+  }
+
+  .colonne-2 .Nom-valeur {
+    order: 2; /* Nom à gauche */
+  }
+
+  .colonne-2 .Description-valeur {
+    order: 1; /* Description à droite */
+  }
+
+}

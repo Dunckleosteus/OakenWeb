@@ -1,0 +1,632 @@
+.text-left::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    border-left: 3px solid #ffcc32;
+  }
+
+.text-left{
+    border-left: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Letter-for {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  gap: 0rem; /* espace entre les colonnes */
+  align-items: center; /* aligne verticalement les éléments au centre */
+  padding: 0px;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-top: 3em;
+  color: white;
+}
+
+.Letter-for .left {
+    text-align: left;
+    align-self: start; /* aligne le contenu en haut */
+    justify-self: start; /* colle à gauche de la cellule */
+  }
+
+  .Letter-for p {
+    margin-top: 3em;
+    font-size: 1.3em;
+  }
+
+  .Letter-for .left h3, p, .Letter-description h3{
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+.Letter-for .right {
+  text-align: left;
+  align-self: end; /* aligne le contenu en haut */
+  justify-self: start;
+  padding-bottom: 20%;
+}
+
+
+.Letter-for .middle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+
+
+
+  
+  .Letter-for .img-bottom {
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .Letter-for .img-bottom-K{
+    z-index: 1;
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: 4vw;
+  }
+
+
+
+
+  .Letter-for .img-top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%; /* ajuste selon tes besoins */
+  }
+
+  
+  .Letter-for .img-top-A{
+    position: absolute;
+    bottom: -20%;
+    left: 49.8%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%; /* ajuste selon tes besoins */
+  }
+
+  .Letter-for .img-top-K{
+    position: absolute;
+    bottom: -10%;
+    left: 49.8%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 25%; /* ajuste selon tes besoins */
+  }
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  .Letter-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes égales */
+    grid-template-rows: auto auto; /* 2 lignes automatiques */
+    gap: 0px; /* espace entre les cellules */
+    padding: 2em;
+    color: white;
+    margin-bottom: 7em;
+  }
+
+  .Letter-description p, .Letter-description-k p {
+    font-size: 1.3em;
+  }
+  
+
+
+  
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+    height: 300px;
+    border-right: 1.5px solid #ffcc32;
+    padding-top: 3em;
+  }
+  
+  
+  .img-1 {
+    grid-column: 1;
+    grid-row: 1 / 3;      
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .img-2 {
+    grid-column: 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .img-3 {
+    grid-column: 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .img-4 {
+    grid-column: 2;
+    grid-row: 1 / 3;      
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+ 
+  
+  .top-right {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1.5em;
+    padding-top: 50px;
+  }
+
+  .top-right p, h3{
+    text-align: left ;
+  }
+  
+  .bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 1.5em;
+    border-right: 1.5px solid #ffcc32;
+  }
+
+  .bottom-left  p, h3{
+    text-align: left ;
+  }
+  
+  .bottom-right {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .bottom-right img{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 20%;
+    display: block;
+  }
+
+  .A-bottom-right-img{
+    height: 200px;
+  }
+
+  .bottom-right img {
+    object-position: 0 100%;
+  }
+  
+  
+  
+
+  
+
+.chameleon {
+
+  object-position: bottom;
+}
+
+
+    
+
+
+  .Letter-description-k {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    padding: 1.5em;
+    margin-top: 3vw;
+    color: white;
+    margin-bottom: 5em;   
+  }
+  
+  /* Positionnement spécifique des éléments */
+  .Letter-description-k > :nth-child(1) { grid-column: 1; grid-row: 1; } /* image */
+  .Letter-description-k > :nth-child(2) { grid-column: 2; grid-row: 1; } /* texte */
+  
+  .Letter-description-k > :nth-child(3) { grid-column: 2; grid-row: 2; } /* texte inversé */
+  .Letter-description-k > :nth-child(4) { grid-column: 1; grid-row: 2; } /* image inversée */
+  
+  .Letter-description-k > :nth-child(5) { grid-column: 1; grid-row: 3; } /* image */
+  .Letter-description-k > :nth-child(6) { grid-column: 2; grid-row: 3; } /* texte */
+  
+  .grid-k-img img {
+    width: 100%;
+    max-height: 230px;
+    object-fit: cover;
+    display: block;
+    padding-bottom: 3em;
+
+  }
+
+  .grid-k-text {
+    padding: 1.5em;
+    text-align: left;
+    align-self: center; /* aligne le contenu en haut */
+    justify-self: start;
+  }
+
+
+  .grid-k-text h3{
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
+
+
+  
+
+  .Letter-description-k > :nth-child(1) img {
+    border-right: 1.5px solid #ffcc32;
+  }
+  
+  .Letter-description-k > :nth-child(3) img {
+    border-left: 1.5px solid #ffcc32;
+  }
+  
+  .Letter-description-k > :nth-child(5) img {
+    border-right: 1.5px solid #ffcc32;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+.center {
+    margin-left: 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .yellow-bar {
+    width: 2px; /* épaisseur de la barre */
+    height: 10px; /* à ajuster dynamiquement selon la hauteur souhaitée */
+    background-color: #ffcc32;
+  }
+  .middle .yellow-bar {
+    position: absolute;
+    top: calc(50% + (108px / 2));  /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 220px; /* ou plus, selon la distance jusqu'à <h3> */
+    background-color: #ffcc32;
+    z-index: 3; /* au-dessus des images */
+  }
+
+  .middle .yellow-bar-A-bottom {
+    position: absolute;
+    top: 432px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 60px; /* ou plus, selon la distance jusqu'à <h3> */
+    background-color: #ffcc32;
+    z-index: 3; /* au-dessus des images */
+    align-items: center;
+  }
+
+  .middle .yellow-bar-A-top {
+    position: absolute;
+    top: -242px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    align-items: center;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 500px; /* ou plus, selon la distance jusqu'à <h3> */
+    background-color: #ffcc32;
+    z-index: 3; /* au-dessus des images */
+  }
+
+  .middle .yellow-bar-K-bottom {
+    position: absolute;
+    top: 444px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 160px; /* ou plus, selon la distance jusqu'à <h3> */
+    background-color: #ffcc32;
+    z-index: 3; /* au-dessus des images */
+    align-items: center;
+  }
+
+  .middle .yellow-bar-K-top {
+    position: absolute;
+    top: -251px; /* à ajuster si tu veux que ça parte du bas de l'image du dessus */
+    align-items: center;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 600px; /* ou plus, selon la distance jusqu'à <h3> */
+    background-color: #ffcc32;
+    z-index: 3; /* au-dessus des images */
+  }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .phases {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.arrow {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #4CAF50; /* Bordure carrée */
+    width: fit-content;
+}
+
+.arrow::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #4CAF50;
+    transform: translateY(-50%);
+}
+
+
+
+
+.pointer {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    background: red;
+  }
+  .pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+  .pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid red;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  
+
+
+  
+  .phases-container {
+    display: flex;
+    border: 1px solid #ffcc32;
+    /*border: 2px solid #6a7a53; */
+    flex-wrap: wrap; /* pour une meilleure adaptabilité */
+    margin: 2em 3vw;
+  }
+  
+  .phase {
+    flex: 1;
+    border-right: 1px solid #6a7a53;
+    min-width: 250px; /* optionnel pour le responsive */
+  }
+  
+  .phase:last-child {
+    border-right: none;
+  }
+
+
+  .phase-subheader {
+    background-color: #3f4d30;
+    color: #ffc107;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    height: 1.2em;
+    font-size: 1.5em;
+  }
+  
+  .phase-header {
+    background-color: #5b6747;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    font-weight: bold;
+    height: 2.2em;
+    font-size: 1.2em;
+
+    
+  display: flex;
+  align-items: center;  
+  justify-content: center; 
+  height: 4em;              
+  padding: 0 10px;          
+  box-sizing: border-box;
+  overflow: hidden;       
+  text-wrap: balance;  
+
+  }
+  
+  .phase-content {
+    background-color: #d6dcd2;
+    padding: 15px;
+    font-style: italic;
+    text-align: center;
+    height: 4.2em;
+    font-size: 1.1em;
+  }
+
+
+
+  .offre-phase p{
+    color: white;
+    margin: 5em 3vw;
+    margin-bottom: 3vw;
+    font-size: 1.2em;
+  }
+
+  .offre-phase p:last-of-type {
+    font-style: italic;
+    margin-top: 0px;
+  }
+
+  .offre-phase .highlight-orange{
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

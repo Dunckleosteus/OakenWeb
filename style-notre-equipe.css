@@ -1,0 +1,174 @@
+.notre-equipe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2em;                          
+    margin-top: 2em;
+  }
+  
+  .notre-equipe img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;  
+    border-radius: 6px;
+  }
+  
+  .carte-membre {
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+  }
+  
+  .carte-membre .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1fr;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.5); /* blanc transparent à 50% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1em;
+    text-align: center;
+    border-radius: 6px;
+  }
+  
+  .carte-membre:hover .overlay {
+    opacity: 1;
+  }
+
+  .carte-membre.active .overlay {
+    opacity: 1;
+  }
+  
+  .carte-membre .overlay .texte h4 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #000;
+  }
+  
+  .carte-membre .overlay .texte h5 {
+    margin: 5px 0 10px;
+    font-weight: normal;
+    font-size: 1.1em;
+    color: #000;
+  }
+  
+  .carte-membre .overlay .texte p {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Responsive : 2 colonnes sur tablette, 1 sur mobile 
+  @media (max-width: 900px) {
+    .notre-equipe {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .notre-equipe {
+      grid-template-columns: 1fr;
+    }
+  }
+  */
+
+
+
+
+
+  @media screen and (orientation: portrait) {
+
+    .notre-equipe {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      margin: 2em 7vw;
+    }
+    
+    .carte-membre {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2em;
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 1em;
+    }
+    
+    .carte-membre img {
+      width: 35vw;
+      height: auto;
+      max-height: 60vh;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    
+    /* On retire l'effet overlay au survol */
+    .carte-membre .overlay {
+      position: static;
+      opacity: 1;
+      background-color: transparent;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0;
+      height: auto;
+      width: 100%;
+    }
+    
+    .carte-membre .texte {
+      text-align: left;
+      padding: 1em;
+    }
+    
+    .carte-membre .texte h4 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #000;
+      text-align: center;
+    }
+    
+    .carte-membre .texte h5 {
+      margin: 0.5em 0 2em !important  ; 
+      font-weight: normal;
+      font-size: 1.2em;
+      color: #333;
+      text-align: center;
+    }
+    
+    .carte-membre .texte p {
+      margin: 0.5em 0 0;
+      font-size: 1em;
+      color: #000;
+    }
+    
+    /* Responsive : passer en colonne sur petit écran */
+    @media (max-width: 800px) {
+      .carte-membre {
+        flex-direction: column;
+      }
+    
+      .carte-membre img {
+        width: 100%;
+        height: auto;
+      }
+    
+      .carte-membre .texte {
+        text-align: center;
+      }
+    }
+    
+  
+
+
+  }
+
+
