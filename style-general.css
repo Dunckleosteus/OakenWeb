@@ -1,22 +1,20 @@
-
-
 .tektur {
-    font-family: "Tektur", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
-  .michroma-regular {
-    font-family:  sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.michroma-regular {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 
-  
+
 .winky-sans {
   font-family: "Winky Sans", sans-serif;
   font-optical-sizing: auto;
@@ -32,14 +30,14 @@
 
 
 
-  body {
-    max-width: 100%; 
-    margin: 0 auto;
-    overflow-x: hidden;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-  }
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
 
 
 
@@ -54,16 +52,16 @@
 
 
 
-  section.top-page p {
-    color: white;
-    font-size: 1.4em;
-    text-align: center;
-    font-style: italic;
-    line-height: 1.4;
-    margin: 3em 4em;
-     width: auto; 
-     border : none;
-     padding: 0px;
+section.top-page p {
+  color: white;
+  font-size: 1.4em;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 3em 4em;
+  width: auto;
+  border: none;
+  padding: 0px;
 }
 
 
@@ -72,16 +70,16 @@
 
 
 h1 {
-    color: white;
-    font-size: 2.5em;
-    text-align: center;
-    padding: 0.5em;
-    font-weight: 600;  
-    font-size: 2em;
-    margin-top: 100px;
-    margin-bottom: 0;
-    scroll-margin-top: 120px;
-     
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 100px;
+  margin-bottom: 0;
+  scroll-margin-top: 120px;
+
 }
 
 .first-h1 {
@@ -91,7 +89,7 @@ h1 {
 
 
 @media screen and (orientation: portrait) {
-  h1{
+  h1 {
     font-size: 3em;
   }
 }
@@ -99,56 +97,59 @@ h1 {
 
 
 h2 {
-    color: white;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 1em;
-    
-    margin-top: 1em;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 1em;
 
-    /*  font-family: winky-sans, sans-serif; */
+  margin-top: 1em;
 
-   
+  /*  font-family: winky-sans, sans-serif; */
+
+
 }
 
 
 
 
 h3 {
-    color: #ffcc32;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow:  0.5px  0.5px 0 darkgoldenrod;
-    margin-left: 5em;
-    margin-top: 70px;
+  color: #ffcc32;
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 0.5px 0.5px 0 darkgoldenrod;
+  margin-left: 5em;
+  margin-top: 70px;
 
 }
 
 
 .highlight-orange {
-    color: #ffcc32;
-    font-weight: bold; /* optionnel si tu veux le faire ressortir un peu plus */
-    font-style: initial;
-    text-shadow: initial;
-  }
+  color: #ffcc32;
+  font-weight: bold;
+  /* optionnel si tu veux le faire ressortir un peu plus */
+  font-style: initial;
+  text-shadow: initial;
+}
 
-  .highlight-darkorange {
-    color: #712e05;
-    font-weight: bold; /* optionnel si tu veux le faire ressortir un peu plus */
-    font-style: initial;
-    text-shadow: initial;
-  }
-
-
-
-
-
-.right-content h3, .left-content h3 {
-    margin-top: 5em;
+.highlight-darkorange {
+  color: #712e05;
+  font-weight: bold;
+  /* optionnel si tu veux le faire ressortir un peu plus */
+  font-style: initial;
+  text-shadow: initial;
 }
 
 
-.right-content h3{
+
+
+
+.right-content h3,
+.left-content h3 {
+  margin-top: 5em;
+}
+
+
+.right-content h3 {
   margin-right: 3vw;
   text-align: right;
 }
@@ -160,7 +161,8 @@ h3 {
 
 
 
-.text-left, .text-right{
+.text-left,
+.text-right {
   color: white;
   font-size: 1.3em;
   padding: 1.5em;
@@ -178,9 +180,9 @@ h3 {
 }
 
 .text-right {
-    text-align: right;   
-    border-top: 0px solid #ffcc32;
-    border-right: 3px solid #ffcc32;
+  text-align: right;
+  border-top: 0px solid #ffcc32;
+  border-right: 3px solid #ffcc32;
 }
 
 
@@ -192,18 +194,20 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60%; /* faire apparaître seulement une partie de border-top */
+  width: 60%;
+  /* faire apparaître seulement une partie de border-top */
   border-top: 3px solid #ffcc32;
 }
 
 
 .text-right::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 60%; /*faire apparaitre seulement une partie de border-top */
-    border-top: 3px solid #ffcc32;
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  /*faire apparaitre seulement une partie de border-top */
+  border-top: 3px solid #ffcc32;
 }
 
 
@@ -213,7 +217,9 @@ h3 {
 
 
 @media screen and (orientation: portrait) {
-  .text-right, .text-left{
+
+  .text-right,
+  .text-left {
     font-size: 0.8em;
   }
 }
@@ -227,118 +233,59 @@ h3 {
 
 
 .separator {
-    /* border: 1px solid rgba(186, 115, 0); 
+  /* border: 1px solid rgba(186, 115, 0); 
     background-color: rgba(243, 199, 87); */
-    height: 2.5px;
-    background-color: #ffcc32;
-    width: 45vw;   
-    margin: 10px auto;
-    border-radius: 3px;
-  }
+  height: 2.5px;
+  background-color: #ffcc32;
+  width: 45vw;
+  margin: 10px auto;
+  border-radius: 3px;
+}
 
 
 
 
-  .contact-button {
-    display: inline-block;
-    padding: 10px 25px;
-    margin-top: 1.3em;
-    border: 2px solid #7a4401;
-    border-radius: 50px; /* Bordure ovale */
-    background-color: #bc4d06;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  /* Centrage du bouton dans son conteneur */
-  .contact-button-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Optionnel : effet au survol */
-  .contact-button:hover {
-    background-color: #ffb300;
-    color: black;
-    border-color: black;
-  }
-  
+.contact-button {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-top: 1.3em;
+  border: 2px solid #7a4401;
+  border-radius: 50px;
+  /* Bordure ovale */
+  background-color: #bc4d06;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+/* Centrage du bouton dans son conteneur */
+.contact-button-container {
+  display: flex;
+  justify-content: center;
+}
 
-  
+/* Optionnel : effet au survol */
+.contact-button:hover {
+  background-color: #ffb300;
+  color: black;
+  border-color: black;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------- IMAGE DE FOND DU SITE -------------------- */
-
-
-  /*
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("Images/yanping-ma-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    opacity: 0.6;      
-    z-index: -1;
-    filter: blur(20px) brightness(80%);
-  } */
-
-  
-  .background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("Images/fond_de_base.png");
-    background-size: cover;
-    background-position: center;     
-    z-index: -1;
-    filter: brightness(90%);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------------------- MENU DEROULANT -------------------- */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Images/fond_de_base.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(90%);
+}
 
 
 header {
@@ -346,340 +293,13 @@ header {
   nav-index: 1000;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; /* espace entre logo à gauche et nav à droite */
-  align-items: center;        
+  justify-content: space-between;
+  /* espace entre logo à gauche et nav à droite */
+  align-items: center;
   padding: 1em 2em;
   background-color: hsla(0, 0%, 98%);
   /* background-color: whitesmoke; */
-  width: 100vw; 
+  width: 100vw;
   box-sizing: border-box;
-
-
+  overflow: hidden;
 }
-
-header img {
-  height: auto;
-  max-width: 20vw;
-  object-fit: contain; /* les proportions restent intacts */
-  /*
-  
-  height: auto;  à ajuster selon la taille de ton logo */
-}
-
-
-
-
-
-nav {
-    display: flex; /* Flexbox pour aligner les liens sur une seule ligne */
-    white-space: nowrap;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    margin-left: 50px;
-    font-size: 1.3em;
-    border: 2px solid transparent;
-  }
-
-  nav a:hover {
-    background-color: none;
-    color: #ffb300;
-    border-color: none;
-  }
-
-
-  
-  .menu-title {
-    font-weight: bold;
-    font-size: 1.3em;
-    color: #333;
-    cursor: pointer;
-  }
-
-  .menu-title.active {
-    color: #ffb300;
-  }
-
-  .menu-title.active a{
-    color: #ffb300;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 50px;
-  }
-
-
-  
-  .dropdown-content {
-    opacity: 0;
-    transform: translateY(-10px);
-    pointer-events: none;
-    transition: opacity 1s ease, transform 0.3s ease;
-    display: flex; /* garder flex pour l’organisation */
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
-    flex-direction: column;
-    border: 2px solid rgb(255, 231, 125);
-    border-radius: 5px;
-    top: calc(100% + 0px);
-  }
-  
-  
-  .dropdown-content a {
-    margin-left: 0; /* pas besoin de marge ici */
-    padding: 10px 16px;
-    font-size: 1.1em;
-    top: 0;
-    color: #333;
-    text-decoration: none;
-    border: none;
-    font-style: italic;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
-    color: #ffb300;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-  .dropdown:hover .menu-title {
-    color: #ffb300;
-  }
-  .dropdown-content.show {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-  }
-
-  
-
-.menu-title.active-section {
-  color: #ffb300;
-}
-
-.menu-title.active-section a {
-  color: #ffb300;
-}
-
-/* Nouveau pour les liens du menu déroulant */
-.dropdown-content a.active-link {
-  color: #ffb300 !important;
-  font-weight: bold;
-}
-
-
-
-
-
-/* 
-
-img:nth-of-type(2) {
-  display: none;
-}
-
-
-@media screen and (orientation: portrait) {
-  img:first-of-type {
-    display: none;
-  }
-
-  img:nth-of-type(2) {
-    display: block;
-    height: 5em;
-    object-fit: contain;
-  }
-  .nav a, .menu-title{
-    font-size: 2em;
-
-  }
-
-
-    .nav, .menu-title {
-      font-size: 2em;
-      text-align: center; 
-      margin: 0 auto; 
-    }
-  
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-body{
-    background-color: beige;
-} */
-
-
-
-
-
-/* -------------------- FOOTER -------------------- */
-
-footer {
-  display: flex;
-  flex-direction: column;
-  background-image: url('Images/Footer/fond_pied_de_page.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; 
-  color: white;
-  padding: 2em;
-  margin-top: 20vh;
-  opacity: 96%;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-around;
-  max-width: 100vw;
-  text-align: center;
-  margin-bottom: 8em;
-}
-
-.footer-top > div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;  /* empile les éléments verticalement */
-  align-items: center;     /* centre horizontalement les éléments */
-}
-
-.footer-top h3 {
-  margin: 1em;
-  font-size: 1.5em;
-}
-
-.footer-top a {
-  color: white;
-  text-decoration: none;
-  margin: 0.5em 0; /* marge verticale seulement */
-  display: block;  /* force l'affichage en bloc pour éviter les bugs */
-  font-size: 1.3em;
-}
-
-
-
-
-
-
-
-/* Partie basse inchangée sauf container */
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-
-/* Centre toujours centré */
-.footer-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-}
-
-.footer-left,
-.footer-right {
-  display: flex;
-  align-items: center;
-}
-
-.footer-right p {
-  text-align: right;
-}
-
-
-.footer-left a {
-  margin-right: 10px;
-}
-
-footer img {
-  height: 70px;
-
-}
-
-.footer-center img {
-  height: 75px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Structure principale pour maintenir le footer en bas */
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin: 0;
-}
-
-/* Centre verticalement le contenu */
-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centre verticalement */
-  align-items: center;     /* Centre horizontalement */
- 
-  padding-top: 150px;
-  text-align: center;
-}
-
-
-/* Footer responsive */
-@media (min-width: 768px) {
-  .footer-left, .footer-center, .footer-right {
-      flex: 1;
-  }
-
-  footer {
-      flex-wrap: nowrap;
-  }
-}
-
-
-
-
