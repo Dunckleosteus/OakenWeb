@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     'qui-sommes-nous',
     'notre-histoire',
     'notre-equipe',
+    'test-target',
     'on-parle-de-nous'
   ];
 
@@ -67,7 +68,4 @@ document.querySelector('.menu-title').addEventListener('click', () => {
     window.location.hash = '#qui-sommes-nous';
   }
 });
-
-
-
 
