@@ -9,3 +9,16 @@
   display: flex;
   align-items: center;
 }
+
+footer img {
+  height: 35px;
+  width: auto;
+  display: inline-block;
+}
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 8px;
+  ;
+}
