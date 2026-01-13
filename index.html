@@ -50,16 +50,16 @@
   </main>
   <div id="foot"></div>
   <script>
+    fetch("foot.html").then(res => res.text())
+      .then(data => {
+        document.getElementById("foot").innerHTML = data;
+      });
+  </script>
+  <script>
     fetch("navbar.html")
       .then(res => res.text())
       .then(data => {
         document.getElementById("navbar").innerHTML = data;
-      });
-  </script>
-  <script>
-    fetch("foot.html").then(res => res.text())
-      .then(data => {
-        document.getElementById("foot").innerHTML = data;
       });
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

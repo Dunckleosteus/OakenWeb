@@ -359,6 +359,13 @@
 
   </main>
 
+  <div id="foot"></div>
+  <script>
+    fetch("foot.html").then(res => res.text())
+      .then(data => {
+        document.getElementById("foot").innerHTML = data;
+      });
+  </script>
   <script>
     fetch("navbar.html")
       .then(res => res.text())
