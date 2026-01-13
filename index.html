@@ -15,33 +15,53 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Michroma&family=Tektur:wght@400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+
+
+  <!--bootstrap start -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- to ensure that it works on mobile screens -->
+
+  <!--bootstrap end -->
 </head>
 
 <body class="home">
-  <div class="viewport-outline"></div>
-  <!--TODO: adapt to screen width-->
-
-  <!--<a href="index.html">
-      <img src="Images/OAK-Innovation-logo.png" title="Logo OAK innovation" alt="Logo OAK innovation">
-    </a> -->
-
-  <div class="header">
-    <div class="header-right">
-
-      <div class="dropdown">
-        <span class="menu-title">A propos</span>
-        <div class="dropdown-content">
-          <a href="qui-sommes-nous.html#qui-sommes-nous">Qui sommes-nous ?</a>
-          <a href="qui-sommes-nous.html#notre-histoire">Notre histoire</a>
-          <a href="qui-sommes-nous.html#notre-equipe">L'équipe</a>
-          <a href="qui-sommes-nous.html#on-parle-de-nous">La presse</a>
-        </div>
+  <!--Navbar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">WebSiteName</a>
       </div>
-      <a href="expertise.html">Expertise</a>
-      <a href="biomimetisme.html">Biomimétisme</a>
-      <a href="contact.html">Contact & Infos</a>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="biomimetisme.html">Biomimétisme</a></li>
+          <li><a href="contact.html">Contact & Infos</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="qui-sommes-nous.html#qui-sommes-nous">Qui sommes-nous ?</a></li>
+              <li><a href="qui-sommes-nous.html#notre-histoire">Notre histoire</a></li>
+              <li><a href="qui-sommes-nous.html#notre-equipe">L'équipe</a></li>
+              <li><a href="qui-sommes-nous.html#on-parle-de-nous">La presse</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </nav>
+  <!--Navbar-->
 
   <main>
     <!--<div class="background-accueil"></div> -->
@@ -105,7 +125,7 @@
       </div>
     </div>
   </footer>
-  <script src="menu-deroulant.js"></script>
+  <!--<script src="menu-deroulant.js"></script> -->
 </body>
 
 </html>
